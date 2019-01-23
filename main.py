@@ -53,7 +53,24 @@ class KBTest(unittest.TestCase):
         self.assertEqual(str(answer[3]), "?X : pyramid2, ?Y : green")
         self.assertEqual(str(answer[4]), "?X : pyramid3, ?Y : red")
         self.assertEqual(str(answer[5]), "?X : pyramid4, ?Y : red")
-        
+
+    # def test_assert(self):
+    #     file2 = 'statements_kb2.txt'
+    #     data = read.read_tokenize(file2)
+    #     self.KB2 = KnowledgeBase([], [])
+    #     # Checking to make sure fact #1 from kb2.txt was correctly added into the KB
+    #     self.KB2.kb_assert(data[0])
+    #     self.KB2.kb_assert(data[0]) #try inserting same fact? does it duplicate
+    #     print("list of facts:" + str(self.KB2.facts))
+    #     # Checking to make sure a rule would not be added to the KB
+    #     print("rule" + str(data[8]))
+    #     self.KB2.kb_assert(data[8])
+    #     print("list of facts (appended)" + str(self.KB2.facts))
+    #     #self.assertEqual()
+        # for item in data:
+        #     if isinstance(item, Fact):
+        #         self.KB.kb_assert(item)
+
 
 if __name__ == '__main__':
     unittest.main()
